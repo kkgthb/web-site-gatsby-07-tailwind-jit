@@ -1,18 +1,25 @@
 {
-	"name" : "netlify-gatsby-test-04",
-	"description" : "Does this really work?",
-	"version" : "0.0.4",
-	"scripts" : {
-		"develop": "gatsby develop",
+	"name": "web-site-gatsby-07-tailwind-jit",
+	"description": "Another Tailwind JIT experiment",
+	"version": "0.0.1",
+	"scripts": {
+		"develop": "cross-env NODE_ENV=development gatsby develop",
 		"start": "npm run develop",
-		"build": "gatsby build",
-		"serve": "gatsby serve"
+		"build": "cross-env NODE_ENV=production gatsby build",
+		"serve": "cross-env NODE_ENV=production gatsby serve"
 	},
-	"dependencies" : {
-		"gatsby": ">=2.22.15",
-		"gatsby-source-filesystem": ">=2.3.11",
-		"gatsby-transformer-remark": ">=2.8.15",
-		"react": ">=16.12.0",
-		"react-dom": ">=16.12.0"
+	"dependencies": {
+		"@tailwindcss/jit": "latest",
+		"autoprefixer": "latest",
+		"cross-env": "latest",
+		"gatsby": "latest",
+		"gatsby-plugin-postcss": "latest",
+		"gatsby-source-filesystem": "latest",
+		"gatsby-transformer-remark": "latest",
+		"postcss": "latest",
+		"postcss-cli": "latest",
+		"react": "latest",
+		"react-dom": "latest",
+		"tailwindcss": "latest"
 	}
 }

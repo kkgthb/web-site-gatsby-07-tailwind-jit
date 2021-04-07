@@ -1,9 +1,13 @@
 import SectionBlue from  './sectionBlue.js';
 import SectionPink from  './sectionPink.js';
 import SectionTaskList from  './sectionTaskList.js';
+import SectionFeatures from  './sectionFeatures.js';
 
-export default {
+const exportme = {
     SectionBlue,
     SectionPink,
-    SectionTaskList
+    SectionTaskList,
+    SectionFeatures,
 };
+
+export default exportme;
